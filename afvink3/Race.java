@@ -74,6 +74,10 @@ public class Race extends JFrame implements ActionListener {
          * Kijk in de class Paard hoe je de paarden
          * kunt initialiseren.
          */
+        h1 = new Paard("Glitterhoof", Color.BLACK);
+        h2 = new Paard("Usain Bolt", Color.BLUE);
+        h3 = new Paard("Konijn", Color.ORANGE);
+        h4 = new Paard("John", Color.RED);
         /** Loop tot een paard over de finish is*/
         while (h1.getAfstand() < lengte
                 && h2.getAfstand() < lengte
@@ -88,6 +92,7 @@ public class Race extends JFrame implements ActionListener {
              * dat er 1 seconde pauze is. De methode pauzeer is onderdeel
              * van deze class
              */
+            pauzeer(1000);
             /* (8) Voeg hier code in om 4 paarden te tekenen die rennen
              * Dus een call van de methode tekenPaard
              */
