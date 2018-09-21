@@ -21,6 +21,7 @@ public class Paard {
     private static int aantal = 0;
     private String naam;
     private Color kleur;
+    private Image image;
     Random random = new Random();
 
     /* Constructor voor Paard */
@@ -30,6 +31,15 @@ public class Paard {
         this.afstand = 0;
         paardNummer = ++aantal;
     }
+
+    Paard(String name, Image image) {
+        this.naam = name;
+        this.image = image;
+        this.afstand = 0;
+        paardNummer = ++aantal;
+    }
+
+    public Image getImage() { return this.image; }
 
     public String getNaam() {
         return this.naam;
